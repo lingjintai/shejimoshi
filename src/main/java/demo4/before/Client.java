@@ -9,6 +9,7 @@ public class Client {
 
     public static void main(String[] args) {
 
+        //11
         HeiMaSafetyDoor door = new HeiMaSafetyDoor();
 
         door.antiTheft();

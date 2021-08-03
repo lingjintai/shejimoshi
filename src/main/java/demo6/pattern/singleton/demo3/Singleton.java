@@ -14,9 +14,9 @@ public class Singleton {
     //对外提供访问方式
 
     //线程不安全
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         if (null == instance) {
-            instance=new Singleton();
+            instance = new Singleton();
         }
         return instance;
     }

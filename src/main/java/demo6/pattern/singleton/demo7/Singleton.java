@@ -24,4 +24,15 @@ public class Singleton implements Serializable {
     public static Singleton getInstance(){
         return SingletonHolder.INSTANCE;
     }
+
+
+    //这里进行二次修改 修改之后 序列化就不会破坏单例
+    //当进行反序列化 会自动调用该方法 会直接返回
+    public Object readResolve(){
+        return  SingletonHolder.INSTANCE;
+    }
+
+
+
+
 }

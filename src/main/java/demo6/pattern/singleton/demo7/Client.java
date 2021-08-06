@@ -10,7 +10,7 @@ import java.io.*;
 public class Client {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        //writeObject2File();
+        writeObject2File();
 
         readObject2File();
         readObject2File();

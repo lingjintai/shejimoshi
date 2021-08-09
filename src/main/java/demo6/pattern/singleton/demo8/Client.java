@@ -1,6 +1,7 @@
 package demo6.pattern.singleton.demo8;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -9,7 +10,7 @@ import java.lang.reflect.InvocationTargetException;
  * @time: 2021/8/5 0005 14:58
  */
 public class Client {
-    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         //获取Singleton字节码对象
         Class<Singleton> singletonClass = Singleton.class;
         //获取无参构造方法的对象
@@ -19,8 +20,12 @@ public class Client {
         //通过反射的方式去创建
         Singleton singleton = declaredConstructor.newInstance();
 
-        Singleton singleton1 = declaredConstructor.newInstance();
+        Field flag = singletonClass.getDeclaredField("flag");//如果在这里进行参数更改还是会导致对象被实例化两次
+        flag.setAccessible(true);
+        flag.set("flag",false);
 
+        Singleton singleton1 = declaredConstructor.newInstance();
+        System.out.println(singleton1.str);
         System.out.println(singleton == singleton1);
 
 

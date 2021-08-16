@@ -7,6 +7,8 @@ package demo6.pattern.factory.abstract_factory;
  */
 public interface DessertFactory {
 
+
+
     //生产咖啡的功能
     Coffee createCoffee();
 

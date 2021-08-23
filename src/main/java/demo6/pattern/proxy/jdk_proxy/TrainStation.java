@@ -10,6 +10,6 @@ package demo6.pattern.proxy.jdk_proxy;
 public class TrainStation implements SellTickets {
     @Override
     public void sell() {
-        System.out.println("火车站卖票");
+        System.out.println("火车11站卖票");
     }
 }

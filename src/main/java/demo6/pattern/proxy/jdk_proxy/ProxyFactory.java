@@ -30,7 +30,7 @@ public class ProxyFactory {
                     /**
                      * Object proxy, 代理对象  和sellTickets 是同一个对象
                      * Method method, 对接口中的方法进行封装的调用
-                     * Object[] args 调用方法的实际参数
+                     * Object[] args 调用方法的实际参数11
                      *
                      * 返回值就是方法的返回值
                      */

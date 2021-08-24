@@ -12,4 +12,7 @@ public class TrainStation implements SellTickets {
     public void sell() {
         System.out.println("火车11站卖票");
     }
+
+
+
 }

@@ -17,5 +17,12 @@ public class Client {
         sellTickets.sell();
 
 
+        System.out.println(sellTickets.getClass());
+
+         //让程序一直执行
+        while (true){
+
+        }
+
     }
 }

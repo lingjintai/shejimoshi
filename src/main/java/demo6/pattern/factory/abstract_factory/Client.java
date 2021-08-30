@@ -23,9 +23,9 @@ public class Client {
         StringJoiner sj =new StringJoiner(",","[","]");
 
 
-        sj.add("我的").add("幸福").add("生活");
 
-        System.out.println(sj.toString());
+        System.out.println(sj.toString());        sj.add("我的").add("幸福").add("生活");
+
 
 
 

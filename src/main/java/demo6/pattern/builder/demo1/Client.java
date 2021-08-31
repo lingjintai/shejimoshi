@@ -1,7 +1,7 @@
 package demo6.pattern.builder.demo1;
 
 /**
- * @description:
+ * @description: 建造者模式
  * @author: ljt
  * @time: 2021/8/16 0016 16:57
  */

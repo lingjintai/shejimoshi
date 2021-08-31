@@ -1,7 +1,7 @@
 package demo6.pattern.adapter.object_adapter;
 
 /**
- * @description:
+ * @description: 适配器模式
  * @author: ljt
  * @time: 2021/8/25 0025 11:05
  */

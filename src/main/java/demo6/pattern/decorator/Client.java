@@ -1,7 +1,7 @@
 package demo6.pattern.decorator;
 
 /**
- * @description:
+ * @description: 装饰者模式
  * @author: ljt
  * @time: 2021/8/27 0027 10:39
  */

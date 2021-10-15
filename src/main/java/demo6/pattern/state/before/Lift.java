@@ -63,6 +63,7 @@ public class Lift implements ILift {
                 break;
             case CLOSING_STATE:
                 //把电梯设置为开启状态
+                System.out.println("电梯开始运行了");
                 setState(RUNNING_STATE);
                 break;
             case STOPPING_STATE:
@@ -79,12 +80,16 @@ public class Lift implements ILift {
             case OPENING_STATE:
                 break;
             case RUNNING_STATE:
+                System.out.println("电梯停止了 ");
                 setState(STOPPING_STATE);
                 break;
             case CLOSING_STATE:
+                System.out.println("电梯停止了 ");
                 setState(STOPPING_STATE);
                 break;
             case STOPPING_STATE:
+                System.out.println("电梯停止了 ");
+                setState(STOPPING_STATE);
                 break;
             default:
                 throw new IllegalArgumentException("不合法的参数");

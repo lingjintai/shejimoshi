@@ -7,7 +7,7 @@ package demo6.pattern.bridge;
  * @modified By：`
  * @version: 1.0
  */
-public class Client {
+public class      Client {
     public static void main(String[] args) {
         //创建mac
         OpratingSystem system =new Mac(new AviFile());

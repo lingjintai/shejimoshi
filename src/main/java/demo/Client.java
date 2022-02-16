@@ -1,5 +1,10 @@
 package demo;
 
+import java.util.*;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 /**
  * @description:
  * @author: ljt
@@ -13,11 +18,68 @@ public class Client {
     public static void main(String[] args) {
 
 
-        SougouInput sougouInput =new SougouInput();
-        sougouInput.setSkin(new HeiMaSkin());
+//        SougouInput sougouInput =new SougouInput();
+//        sougouInput.setSkin(new HeiMaSkin());
+//
+//        sougouInput.display();
+//
+//
+//        User use= new User("张三","admin");
+//
+//
+//        JSONArray jsonArray =new JSONArray();
+//
+//
+//        jsonArray.add(JSONObject.toJSON(use));
+//
+//        JSONObject jsonObject =new JSONObject();
+//        jsonObject.put("parkingSpaceStatusList",jsonArray);
+//
+//        JSONObject MotorVehicleObject = new JSONObject();
+//
+//        MotorVehicleObject.put("MotorVehicleObject",jsonObject);
+//
+//        System.out.println(MotorVehicleObject.toJSONString());
 
-        sougouInput.display();
+        List<String> list = new ArrayList<>();
 
+        list.add("1");
+        list.add("3");
+
+
+        List<String> list1 = new ArrayList<>();
+        list1.add("5");
+        list1.add("2");
+
+        list.removeAll(list1);
+
+        System.out.println(list);
+
+
+        Map<String, String> map = null;
+
+        map = Optional.ofNullable(map).orElseGet(() -> {
+            return new HashMap<String, String>();
+        });
+
+        System.out.println(map);
+
+        map.put("1111", "2222");
+
+        for (Iterator iterator = map.entrySet().iterator(); iterator.hasNext(); ) {
+            Map.Entry next = (Map.Entry) iterator.next();
+
+            System.out.println(next.getKey());
+            System.out.println(next.getValue());
+
+
+            ExecutorService executorService = Executors.newFixedThreadPool(3);
+
+
+        }
+
+
+        System.out.println(22>>2);
 
 
     }

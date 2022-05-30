@@ -7,6 +7,7 @@ package demo6.pattern.responsibility;
  */
 public class Client {
     public static void main(String[] args) {
+        ///211
         LeaveRequest leaveRequest = new LeaveRequest("小明", 3, "身体不适");
         //创建各级领导对象
         GroupLeader groupLeader = new GroupLeader();

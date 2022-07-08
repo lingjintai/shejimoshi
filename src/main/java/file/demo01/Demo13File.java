@@ -2,9 +2,10 @@ package file.demo01;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.LinkedList;
 
 /**
- * 字符流  Reader 是字符输入流的最顶层的父类
+ * 字符流  Reader 是字符输入流的最顶层的父类 是所有字符输出流的最顶层的父类 是一个抽象类
  */
 public class Demo13File {
 
@@ -19,5 +20,17 @@ public class Demo13File {
         }
         fr.close();
 
+
+        LinkedList list = new LinkedList();
+        LinkedList list2 = new LinkedList();
+        list.add(1);
+        list.add(3);
+        list.add(2);
+
+        for (int i = list.size() - 1; i >= 0; i--) {
+            list2.add(list.get(i));
+        }
+
+        System.out.println(list2.toString());
     }
 }
